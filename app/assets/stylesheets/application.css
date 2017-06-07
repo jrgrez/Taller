@@ -10,7 +10,18 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *=	require bootstrap-darkly
  *= require_tree .
  *= require_self
+ *= stub bootstrap-darkly.css
  */
+
+.pag2{
+    background-color: transparent;
+    background-image: url("imagen1.jpg"), url("imagen2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: 50% 100%;
+    background-position: left top, right top;
+}

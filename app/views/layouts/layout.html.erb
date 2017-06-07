@@ -3,17 +3,13 @@
   <head>
     <title>Taller</title>
     <%= csrf_meta_tags %>
-	
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-    <%= stylesheet_link_tag    'bootstrap-darkly', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
   </head>
 
-  <body class= "<%=params[:action]%>" >
+  <body>
 	  <nav class="navbar-inverse navbar-default">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,13 +36,11 @@
 	<div class="container">
 		<%= yield %>
 	</div>
-
-	<ol>
+		<ol>
 		<% @users.each do |x| %>
 			<li><%= x %></li>
 		<% end %>	
 	</ol>
-	
 
   </body>
 </html>
